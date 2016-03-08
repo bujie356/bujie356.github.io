@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>浅谈：html5和html的区别-个人博客</title>
+  <meta name="keywords" content="个人博客" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="../../css/index.css"/>
+  <link rel="stylesheet" href="../../css/style.css"/>
+  <script type="text/javascript" src="../../js/jquery1.42.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.SuperSlide.2.1.1.js"></script>
+  <!--[if lt IE 9]>
+  <script src="js/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="content">
+    <!--left-->
+    <div class="left" id="news" >
+      <div class="weizi">
+        <div class="wz_text">
+          当前位置：
+          <a href="#">首页</a>
+          >
+          <a href="#">学无止境</a>
+          >
+          <span>文章内容</span>
+        </div>
+      </div>
+      <div class="news_content" >
+
+        <div class="news_top">
+          <h1>浅谈:我的java学习</h1>
+          <p>
+            <span class="left sj">时间:2015-12-9</span>
+            <span class="left fl">分类:学无止境</span>
+            <span class="left author">羽毛</span>
+          </p>
+        </div>
+
+        <div class="news_text" style="height:800px">
+          &nbsp;&nbsp;从学习Java开发到现在虽然也已经快两年了，但是要说到分享一下经验实在是不敢当。权当是对自己的一个总结吧.
+          <br/>
+          <h3>一、Java核心</h3>
+          &nbsp;&nbsp;这是学习Java的基础，掌握程度的深浅甚至直接影响后面的整个学习进程。Java的核心主要包括几个部分：
+          <br/>
+          1、初级的有语法基础、面向对象思想。
+          <br/>
+          学习任何一门语言语法都是必须的，因为Java的接近自然语言，也是一种相对比较容易学的语言。同时面向对象编程更是其核心思想，要理解其实只要记住一句话就行了，那就是：一切皆对象。
+          <br/>
+          2、中级的IO流、多线程、反射及注解等。
+          <br/>
+          IO流程、多线程等是相对比较高级一点的了，通过学习我们会发现这些都很有用而且很有趣。例如我们可以读取一个Excel文件、将一个文件分离，做一个时钟、使用多个线程发送邮件等等很多有意思的事。另外反射及注解更是后面流行框架SSH等的基础，在使用中你便会慢慢感受到它的无穷魅力。
+          <br/>
+          3、高级一点的就是设计模式和框架之类了。
+          <br/>
+          要学习好一门语言，仅仅会使用还是不够的，我们不仅要深入研究其原理，而且还要找到其一些共性的东西，从而减少反复的劳动，让代码可重用、更可靠且更容易被别人理解。
+          <br/>
+          <h3>二、前端Web</h3>
+          现在来说Java最流行的应用还是Web开发。那么作为Web开发，对于前台的知识的学习也是必须的，当然并不是一定要按照前端工程师的标准去要求。但是一些基础的知识也是必须要掌握的，毕竟Web应用是前台和后台的一个交互的过程。像HTML、CSS、Javascript等都是基础的知识，另外作为开发人员对目前最流行的Javascript框架Jquery更是必学不可的。
+          <br/>
+          <h3>三、数据库</h3>
+          有人说，所有的应用无非就是数据的输入、处理到输出的过程。期间同时可能还会涉及到数据的存储问题。对于结构化的数据，我们常用的还是像Oracle、Mysql和PostgreSQL之类的关系型数据库。同时针对数据库编程还是PL/SQL需要学习。使用Java访问数据库的话还有JDBC,mybasit。初学者用mysql就好了,轻量且方便.并且非常建议大家使用命令行来访问数据库,以减少对图形化界面的依赖.
+          <br/>
+          <h3>四、Servlet</h3>
+          好了，前面这么多准备的工作。下面我们进入正题。作为Java开发，CoreJava是核心，而作为JavaWeb开发，我认为Servlet才是核心。Servlet是服务器端的Java应用程序，但是与普通的Java应用程序不同的是，它是由web服务器来加载启动，即我们常说的Servlet，如Tomcat便是servlet容器。另外谈到J2EE开发，这里有一个重要的模型不得不提一下，很多人其实已经想到了，那便是MVC（模型-视图-控制器）模型。在传统的web开发中，往往是JavaBean充当模型、JSP做视图而Servlet作为控制器。
+          <br/>
+          <h3>五、框架</h3>
+          说到框架，其实已经提到了著名的MVC模型，SSH（Struts+Spring+Hibernate）就是一个非常好的实现。对于每一个框架的作用，我想就不用多说了，毕竟这里并不是想写一本教程。另外还有工作流开发的JBPM，搜索引擎Lucence及使系统对外提供接口的webservice应用组件等都是应该要掌握的。
+          <br/>
+          <h3>六、服务器</h3>
+          关于服务器，初学者一般使用tomcat,但是正式项目会用到其他服务器,所以一定要对其有一定的了解,并且一定要学会自己在服务器上搭建环境.<br/>
+          <h3>七、工具</h3>
+          这里主要介绍几个开发辅助工具。如日志工具Log4j、测试工具Junit、版本管理工具SVN还有项目管理maven等。另外还有第三方插件Ectable。
+          <br/>
+          <h3>八、项目示例</h3>
+          Springside是以Spring框架为核心的J2EE应用参考示例，是JavaEE中的比较主流的技术选型及最佳实践的总结与演示，非常值得一看。把它看透了，J2EE就差不多了甚至是比较厉害的了。
+          <br/>
+          <h3>九、话外话</h3>
+          其实说到底，对于技术的学习，有一个规则是通用的，那便是实践。把学习到的东西马上用起来做出一个示例来，我认为是一种比较好的学习方法。其次要耐得住寂寞,毕竟编程如果静不下心,会觉得非常乏味,思绪也很难理清.其次,编程无论是作为爱好还是作为工作,终究不是生活的全部,不要老是宅在电脑前面,多出去走走,陪陪家人才是生活.
+          <br/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
